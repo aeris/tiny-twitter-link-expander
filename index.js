@@ -1,6 +1,6 @@
 var pageMod = require("sdk/page-mod");
 
 pageMod.PageMod({
-  include: "https://twitter.com*",
+  include: ["twitter.com", "*.twitter.com"],
   contentScriptFile: "./content-script.js"
 });

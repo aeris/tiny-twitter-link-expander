@@ -31,6 +31,10 @@ function expandTwitterLink(linkElem){
     if(originalLink){
       linkElem.setAttribute("href", originalLink)
     }
+    originalLink = linkElem.getAttribute("data-full-url")
+    if(originalLink){
+      linkElem.setAttribute("href", originalLink)
+    }
   }
 }
 
